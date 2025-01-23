@@ -1,0 +1,16 @@
+div{
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: 1s linear;
+}
+
+div:hover{
+    background-color: black;
+    margin-left: 800px;
+    height: 0px;
+    width: 0px;
+    transition: 5s linear;
+}

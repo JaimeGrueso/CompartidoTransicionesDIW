@@ -1,0 +1,42 @@
+
+body{
+    transition-duration: 5000ms;
+}
+
+div{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: greenyellow;
+    transition-duration: 5000ms;
+    transition-timing-function: steps(10);
+
+
+}
+
+article{
+    color: white;
+    width: 700px;
+    background-color: gray;
+    transition-duration: 5000ms;
+    transition-timing-function: linear;
+}
+
+div:hover{
+    width: 97%;
+    border-radius: 50%;
+    background-color: red;
+    transition-duration: 2000ms;
+    transition-timing-function: linear;
+}
+
+article:hover{
+
+    transition-duration: 2000ms;
+    transition-timing-function: steps(10);
+}
+
+body:hover{
+    background-color: black;
+}

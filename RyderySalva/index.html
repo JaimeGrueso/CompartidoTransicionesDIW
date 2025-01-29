@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 60%;
+            transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        div:hover {
+            background-color: lightcoral;
+            transform: rotate(-360deg) scale(1.2);
+        }
+
+        article {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            left: 400px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            border-radius: 60%; 
+            transition: background-color 1s ease-out, transform 0.5s ease-in-out 1s, border-radius 5s ease-out 0.5s;
+        }
+        article:hover {                      
+            background-color: pink;
+            border-radius: 7%;      
+            transition: background-color 0.5s ease-in-out, transform 1s ease-in 0.5s, border-radius 2s ease-in 1s;
+            transform: scaleX(1.5) scaleY(0.5) rotate(180deg);     
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>hey</p>
+    </div>
+    <article>
+        <p>yeh</p>
+    </article>
+    
+</body>
+</html>

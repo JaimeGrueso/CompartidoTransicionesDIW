@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo transición</title>
+</head>
+<style>
+    body {
+        display: grid;
+        background-image: url(assets/cityoftears.jpg);
+        background-size: cover;
+        background-position: center;
+        place-content: center;
+        min-height: 50vh;
+        background-repeat: no-repeat;
+    }
+    div {
+        display: grid;
+        width: 100px;
+        height: 130px;
+        background-image: url(https://sm.ign.com/ign_es/cover/h/hollow-kni/hollow-knight-silksong_db1d.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition-duration: 4s;
+        transition-timing-function: ease;
+        color: transparent;
+        font-size: 8px;
+
+    }
+    div:hover {
+        background-image: url(https://pbs.twimg.com/media/FLLeLorXsAIxCCn.jpg);
+        rotate: 1080deg;
+        color: white;
+        bottom: 200px;
+        left: 50px;
+        
+
+    }
+    img {
+        opacity: 0;
+
+
+    }
+    div:hover img {
+        transition-delay: 5s;
+        transition-timing-function: linear;
+        transition-duration: 0,000000000000000001s;
+        opacity: 1;
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <div>
+                ESTE AÑO SALE SEGURO
+                <img src="assets/gato.jpg">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+#inicio{
+    width: 100px;
+    height: 100px;
+}
+
+#ejercicio1{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    transition-property: background-color, font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease, steps(3);
+}
+#ejercicio1:hover{
+    font-size: 30px;
+    background-color: orange;
+}
+
+#ejercicio2{
+    width: 200px;
+    height: 200px;
+    transition-duration: 3s;
+    transition-property: transform;
+    background-color: purple;
+    transition-timing-function: steps(3);
+}
+#ejercicio2:hover{
+    transform: rotate(180deg);
+}
+
+#ejercicio3{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 100px;
+    transition-duration: 0.5ms;
+    background-color: green;
+}
+
+#ejercicio3:hover{
+    margin-left: 1000px;
+}
+
+#ejercicio4{
+    color: blue;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#ejercicio4:hover{
+    color: yellow;
+    text-decoration:underline;
+    text-decoration-color: yellow;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 100px;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+button:hover{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0, 0, 20px, yellow;
+    border-radius: 100px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: orange;
+}
+
+#inicio{
+    background-color: pink;
+    height: 100px;
+    transition-timing-function: ease-in-out;
+}
+
+#inicio:hover + section:nth-child(2){
+    margin-left: 0;
+    transition-duration: 4s;
+    transform: rotate(720deg);
+
+}
+
+section:nth-child(2){
+    margin-left: 1000px;
+    transition-duration: 2s;
+    transform: rotate(-720deg);
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.redondeado{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 20%;
+}
+
+.circulo:hover,
+.circulo:hover ~ div {
+    opacity: 1;
+    left: 200px;
+}
+
